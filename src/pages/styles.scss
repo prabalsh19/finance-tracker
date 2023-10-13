@@ -1,0 +1,54 @@
+.income {
+  &__actions {
+    display: flex;
+    gap: 5rem;
+    margin: 2rem 1rem;
+
+    &__select {
+      width: 7rem;
+      padding: 5px;
+    }
+  }
+}
+
+.addEntry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    line-height: 2;
+
+    label,
+    input,
+    select,
+    button {
+      font-size: 16px;
+      width: 100%;
+      padding: 5px;
+      outline: none;
+    }
+    button {
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+.report {
+  margin: 1rem;
+
+  select {
+    padding: 4px;
+    margin-right: 1rem;
+  }
+  button {
+    padding: 4px 1rem;
+    cursor: pointer;
+  }
+}
