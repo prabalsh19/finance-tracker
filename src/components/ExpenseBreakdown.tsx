@@ -6,7 +6,10 @@ import axios from "axios";
 export const ExpenseBreakdown = () => {
   const expense = useSelector((state: State) => state.expense);
   console.log(expense);
-  const list = expense.reduce((acc, cur: Entry) => {
+  type Acc = {
+    [key: string]: number;
+  };
+  const list = expense.reduce((acc: Acc, cur: Entry) => {
     if (cur.category in acc) {
       return { ...acc, [cur.category]: acc[cur.category] + cur.amount };
     } else {
